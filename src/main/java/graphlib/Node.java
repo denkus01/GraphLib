@@ -3,7 +3,9 @@ package graphlib;
 import graphlib.edge.Edge;
 import java.util.HashSet;
 import java.util.Set;
-
+/**
+ The class implements a graph node, with values referencing neighbors in the graph.
+  */
 public class Node<T> {
     private T value;
     private Set<Edge> neighbors;
@@ -17,7 +19,7 @@ public class Node<T> {
         return value;
     }
 
-    public void addLink(Edge neighbour) {
+    public void connect(Edge neighbour) {
         neighbors.add(neighbour);
     }
 

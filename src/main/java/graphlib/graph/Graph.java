@@ -1,7 +1,7 @@
 package graphlib.graph;
 
+import graphlib.Node;
 import graphlib.edge.Edge;
-import graphlib.edge.Node;
 import graphlib.exception.GraphException;
 
 import java.util.ArrayDeque;
@@ -15,6 +15,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Graph abstract representation of a graph consisting of graph nodes, and edges
+ *
+ */
 public abstract class Graph {
     private final Set<Edge> edges;
     private final Map<Node, Node> nodes;
@@ -42,6 +46,13 @@ public abstract class Graph {
         }
     }
 
+    /**
+     * Breadth First Search Algorithm for find way between two nodes
+     * @param start - start Node
+     * @param finish - finish Node
+     * @return List of way or emtpy list
+     * @throws GraphException (if nodes null)
+     */
     public List getPath(Node start, Node finish) throws GraphException {
         LinkedList<Node> queue = new LinkedList<>();
         Map<Node, Edge> edgePath = new HashMap<>();

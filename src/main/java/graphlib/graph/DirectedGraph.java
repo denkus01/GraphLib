@@ -1,7 +1,7 @@
 package graphlib.graph;
 
+import graphlib.Node;
 import graphlib.edge.DirectedEdge;
-import graphlib.edge.Node;
 import graphlib.edge.Edge;
 
 public class DirectedGraph extends Graph {

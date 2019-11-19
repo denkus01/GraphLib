@@ -1,6 +1,6 @@
 package graphlib.graph;
 
-import graphlib.edge.Node;
+import graphlib.Node;
 import graphlib.exception.GraphException;
 import org.junit.jupiter.api.Test;
 

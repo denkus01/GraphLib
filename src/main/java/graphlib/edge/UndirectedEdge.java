@@ -1,5 +1,11 @@
 package graphlib.edge;
 
+import graphlib.Node;
+/**
+ * Class for Undirected Edges in a Graph
+ * Have parameters such target  and source for get Node
+ * and checked Link between two nodes
+ */
 public class UndirectedEdge extends Edge {
     public UndirectedEdge(Node fromNode, Node toNode) {
         super(fromNode, toNode);

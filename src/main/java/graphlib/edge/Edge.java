@@ -1,5 +1,7 @@
 package graphlib.edge;
 
+import graphlib.Node;
+
 public abstract class Edge  {
 
     private Node fromNode;
@@ -29,7 +31,6 @@ public abstract class Edge  {
 
         Edge edge = (Edge) obj;
         return fromNode.equals(edge.fromNode) && toNode.equals(edge.toNode);
-
     }
 
     @Override
